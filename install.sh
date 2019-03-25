@@ -55,7 +55,7 @@ fi
 
 # Now we download the binary using CURL and do an MD5 on it to ensure it's the same. Users can of course build from source if they require and validate the MD5.
 
-git clone https://github.com/networkbootstrap/ztpmanager.git
+git clone https://github.com/networkbootstrap/ztpmanagerassets.git
 cd ztpmanager
 # curl -sS -k -o ztpmanager https://raw.githubusercontent.com/networkbootstrap/ztpmanager/master/ztpmanager
 # curl -sS -k -o ztpmanager.md5 https://raw.githubusercontent.com/networkbootstrap/ztpmanager/master/ztpmanager.md5
