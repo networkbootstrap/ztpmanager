@@ -16,6 +16,8 @@ Installation is super simple. You are required to know the physical interface yo
 
 If you take a look at the `config.toml` file and you'll see one host already configured. It's possible to initially create hosts here as well as through the JSON API.
 
+__NOTE__ that when creating or deleting resources through the JSON API, you must __save__ afterwards for the configuration change to impact the `dhcpd.conf` file!!! This is important!!!
+
 __Create Hosts__
 
 curl -X POST \
