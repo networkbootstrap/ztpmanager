@@ -27,6 +27,7 @@ __Create Hosts__
 
 curl -X POST \
   -H 'Content-Type: application/json' \
+  -H "Authorization: Basic YWRtaW46UGFzc3cwcmQ=" \
   -d '{
     "ethernetaddress": "00:0c:29:4d:3d:cd",
     "fixedipaddress": "192.168.50.101",
@@ -37,20 +38,22 @@ curl -X POST \
 
 __Delete Hosts__
 
-curl -X DELETE -H 'Content-Type: application/json' REPLACE_WITH_SERVER_IP:1323/hosts/REPLACE_WITH_HOST_IP
+curl -X DELETE -H 'Content-Type: application/json' \ 
+    -H "Authorization: Basic YWRtaW46UGFzc3cwcmQ=" \
+    REPLACE_WITH_SERVER_IP:1323/hosts/REPLACE_WITH_HOST_IP
 
 __Get Hosts__
 
-curl -X GET http://REPLACE_WITH_SERVER_IP:1323/hosts
+curl -X GET -H "Authorization: Basic YWRtaW46UGFzc3cwcmQ=" \
+    http://REPLACE_WITH_SERVER_IP:1323/hosts
 
 __Get Individual Hosts__
 
-curl -X GET http://REPLACE_WITH_SERVER_IP:1323/hosts/<HOST_IP>
+curl -X GET -H "Authorization: Basic YWRtaW46UGFzc3cwcmQ=" \
+    http://REPLACE_WITH_SERVER_IP:1323/hosts/REPLACE_WITH_HOST_IP
 
 __Save__
 
-curl -X POST -H 'Content-Type: application/json' REAPLCE_WITH_SERVER_IP:1323/save
-
-
-
- 
+curl -X POST -H 'Content-Type: application/json' \
+    -H "Authorization: Basic YWRtaW46UGFzc3cwcmQ=" \
+    REAPLCE_WITH_SERVER_IP:1323/save
