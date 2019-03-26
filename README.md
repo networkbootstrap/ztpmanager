@@ -1,3 +1,4 @@
+[![Documentation Status](https://readthedocs.org/projects/ztpmanager/badge/?version=latest)](https://docs.networkbootstrap.com/en/latest/?badge=latest)
 ## ZTP Manager
 
 ZTP Manager is a wrapper for the [ISC DHCP Server](https://www.isc.org/downloads/dhcp/) which enables you to do zero-touch provisioning for network devices. The wrapper has a HTTP JSON API for ease of configuration.
@@ -5,6 +6,8 @@ ZTP Manager is a wrapper for the [ISC DHCP Server](https://www.isc.org/downloads
 This wrapper not only provides automatic configuration generation for the `/etc/dhcp/dhcpd.conf` file, but also the `/etc/default/isc-dhcp-server` file and initial golden configurations for the devices. 
 
 Take a fresh installation of Ubuntu LTS (16.04 / 18.04) and make sure everything is updated.
+
+For docs, take a look [here](https://docs.networkbootstrap.com).
 
 ## Installation
 
