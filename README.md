@@ -1,4 +1,5 @@
 [![Documentation Status](https://readthedocs.org/projects/ztpmanager/badge/?version=latest)](https://docs.networkbootstrap.com/en/latest/?badge=latest)
+[![Go Report Card](https://goreportcard.com/badge/github.com/networkbootstrap/ztpmanagercode)](https://goreportcard.com/report/github.com/networkbootstrap/ztpmanagercode)
 ## ZTP Manager
 
 ZTP Manager is a wrapper for the [ISC DHCP Server](https://www.isc.org/downloads/dhcp/) which enables you to do zero-touch provisioning for network devices. The wrapper has a HTTP JSON API for ease of configuration.

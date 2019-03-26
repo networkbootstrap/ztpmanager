@@ -1,0 +1,28 @@
+sudo: false
+language: go
+go:
+  - "1.10.x"
+  - "1.9.x"
+  - "1.8.x"
+  - "1.7.x"
+  - master
+matrix:
+  allow_failures:
+    - go: master
+    - go: "1.8.x"
+    - go: "1.7.x"
+  fast_finish: true
+
+install: 
+  - go get -d -t -v ./...
+
+before_script:
+  - go get github.com/golang/lint/golint     # Linter
+
+script:
+  - diff -u <(echo -n) <(gofmt -d .)         # Run gofmt and display diff
+  - go test -v ./...                         # Run all the tests with the race detector enabled
+  - go vet ./...                             # go vet is the official Go static analyzer
+  - golint ./...                             # one last linter
+  - cd cmd
+  - go build -v ./...		             # Specifically build the demo
