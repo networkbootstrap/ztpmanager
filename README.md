@@ -10,6 +10,7 @@ This wrapper not only provides automatic configuration generation for the `/etc/
 Take a fresh installation of Ubuntu LTS (16.04 / 18.04) and make sure everything is updated.
 
 For docs, take a look [here](https://docs.networkbootstrap.com).
+Here is a YouTube video for the initial release! [https://www.youtube.com/watch?v=3Wz4COk-ae4](https://www.youtube.com/watch?v=3Wz4COk-ae4)
 
 ## Installation
 
